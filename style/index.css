@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sunflower:wght@500&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+/* font-family: 'Sunflower', sans-serif; */
+ .headline{
+  font-size: 50px;
+}
+nav{
+  width: 100%;
+}
+.offer_alert {
+  background-color: #408893;
+  height: 45px;
+  color: #fff;
+  text-align: center;
+}
+.offer_alert p {
+  display: inline-block;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.navbar {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav_left ul {
+  display: flex;
+  list-style: none;
+}
+.nav_left ul li {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.nav_left ul li a {
+  color: #221F21;
+  font-family: helvetica;
+  text-decoration: none;
+  text-transform: uppercase;
+} 
+ .hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+.hover-underline-animation:hover .midNavLiist{
+  display: inline-block;
+  position: relative;
+  display: none;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #bd6073;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+.hover-underline-animation:hover {
+  color: #bd6073;
+} 
+
+.logo {
+  height: 70px;
+}
+
+.nav_right {
+  display: flex;
+  font-size: 18px;
+}
+.nav_right *{
+    margin: 5px;
+  }
+.searchInput {
+  border-width: 0 0 2px;
+  font-size: small;
+}
+.nav_right i:hover {
+  color: #408893;
+}
+.middleNavbar{
+    height: 25px;
+}
+.midNavLiist{
+    display: flex;
+    list-style: none;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.midNavLiist li{
+    margin: 0 20px ;
+}
+.midNavLiist li a{
+    color: #221F21;
+}
+.navbarBottom{
+    cursor: pointer;
+}
+.navbarBottom span ,.bottomText{     
+color: #408893;
+letter-spacing: 3px;
+}
+.HeaderNavMainMenu__LinkList {
+    display: flex;
+    margin: auto;
+}
+
+.HeaderNavMainMenu__LinkList *{
+    color: #221F21 ;
+}
+.HeaderNavMainMenu__LinkList li{
+    display: flex;
+    flex-direction: column;
+}
+
+.HeaderNavMainMenu__LinkList a{
+    text-decoration: none;
+    margin: 0 8px 8px 17px;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+}
+.HeaderNavMainMenu__LinkList a:first-child{
+    font-weight: bold;
+
+}
+.HeaderNavMainMenu__LinkList a:hover{
+color: #bd6073;
+-webkit-transition: all 500ms ease;
+-moz-transition: all 250ms ease;
+-ms-transition: all 250ms ease;
+-o-transition: all 250ms ease;
+transition: all 250ms ease;
+}
+.listImages{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+.items{
+  display: none;
+  margin: auto;
+  width: 80%;
+}
+#middleNavbar > ul > li:hover .items{
+  display: block;
+}
+.heading:hover .items{
+  display: none;
+}
+.boxNav {
+    width:100%;
+}
