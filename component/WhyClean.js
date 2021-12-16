@@ -4,4 +4,4 @@ function skincare(){
     return ``
 }
 
-export default skincare()
+export default skincare() 
