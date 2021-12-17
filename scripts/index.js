@@ -19,21 +19,50 @@ function sendOffer(){
 
 var ul = document.getElementById('HeaderNavMainMenu__LinkList')
 ul.innerHTML = skincare
-window.onload = function(){
 
-    var divs = document.getElementsByClassName('navAnchor')
-    function showDiv(){
-        var div = document.getElementById('items')
-        div.style.display = 'block'
-    }
-    function hideDiv(){
-        var div = document.getElementById('items')
-        div.style.display = 'none'
-    }
-    console.log(divs[1]);
-    for(var i = 0; i < divs.length; i++){
-    console.log(divs[i].onmouseenter = showDiv);
-    var item = document.getElementById('items')
-    item.onmouseleave = hideDiv
-    }
-    };
+
+    $(window).scroll(function() {   
+        if($(window).scrollTop() + $(window).height() >= 850) {
+            var div = document.getElementById('nav')
+
+            if(div.classList[0] == undefined){
+               div.style.position = 'fixed'
+                console.log('fixed')
+            }
+        }
+
+        if($(window).scrollTop() + $(window).height() <= 1000) {
+            var div = document.getElementById('nav')
+            if(div.classList[0] == undefined){
+               div.style.position = 'static'
+                console.log('static')
+            } 
+        } 
+
+     }); 
+     
+
+
+
+
+    //  Onload
+    window.onload = function(){
+
+        var divs = document.getElementsByClassName('navAnchor')
+        function showDiv(){
+            var div = document.getElementById('items')
+            div.style.display = 'block'
+        }
+        function hideDiv(){
+            var div = document.getElementById('items')
+            div.style.display = 'none'
+        }
+        console.log(divs[1]);
+        for(var i = 0; i < divs.length; i++){
+        console.log(divs[i].onmouseenter = showDiv);
+        var item = document.getElementById('items')
+        item.onmouseleave = hideDiv
+        }
+
+
+        };

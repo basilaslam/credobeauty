@@ -22,19 +22,109 @@
   <body>
 <div id="navArea"></div>
 
-    <div class="heroImageDiv">
-      <img class="heroImage" src="https://cdn.shopify.com/s/files/1/0637/6147/files/HP_Desktop_Holiday_Dec_1920x.jpg?v=1639151823" alt="">
+
+<div class="heroImage">
+  <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/HP_Desktop_Holiday_Dec_1920x.jpg?v=1639151823" alt="" class="hero">
+</div>
+    <div class="head">
+      <h1 class="heading text-center">Clean Beauty Favorites</h1>
+    </div>
+
+    <div class="beautyFavorites">
+      <div class="imageCard">
+        <div class="cardTop">
+          <img class="cardImage" id="card1" onmouseenter="hoverCardImage(1)" onmouseout="nomalCardImage(1)" onmouseout="nomalCardImage(1)" src="//cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_SkincareUnder40_1.png?v=1634240309" alt="">
+        </div>
+        <div class="cardBottom">
+          <div class="cardPhover">
+            <p class="productName">SHOP SKINCARE</p>
+            <p class="productPrice">$40 & UNDER</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="imageCard">
+        <div class="cardTop">
+          <img class="cardImage" id="card2" onmouseenter="hoverCardImage(2)" onmouseout="nomalCardImage(2)" onmouseout="nomalCardImage(2)" src="//cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_MUunder20.png?v=1636058261" alt="">
+        </div>
+        <div class="cardBottom">
+          <div class="cardPhover">
+            <p class="productName">SHOP SKINCARE</p>
+            <p class="productPrice">$40 & UNDER</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="imageCard">
+        <div class="cardTop">
+          <img class="cardImage" id="card3" onmouseenter="hoverCardImage(3)" onmouseout="nomalCardImage(3)" onmouseout="nomalCardImage(3)" src="//cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_bath_body.png?v=1633984400" alt="">
+        </div>
+        <div class="cardBottom">
+    <div class="cardPhover">
+      <div class="cardPhover">
+        <p class="productName">SHOP SKINCARE</p>
+        <p class="productPrice">$40 & UNDER</p>
+      </div>
+    </div>
+        </div>
+      </div>
+
+      <div class="imageCard" style="margin-right: 0;">
+        <div class="cardTop">
+          <img class="cardImage" id="card4" onmouseenter="hoverCardImage(4)" onmouseout="nomalCardImage(4)" onmouseout="nomalCardImage(4)" src="//cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_Frag_14fb016c-2ad7-46e6-a5e4-1a191cc074f2.png?v=1636058419" alt="">
+        </div>
+        <div class="cardBottom">
+          <div class="cardPhover">
+            <p class="productName">SHOP SKINCARE</p>
+            <p class="productPrice">$40 & UNDER</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="head">
-      <h1 class="heading">Clean Beauty Favorites</h1>
+      <h1 class="heading text-center blackText">Shop Bestsellers</h1>
     </div>
+
+    
+
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="module" src="./scripts/index.js"></script>
+    <script>
+       function hoverCardImage(el){
+         var hoverImageUri=[
+          '//cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_skincare_hovor_1.png?v=1633984112',
+          '//cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_MUunder20_hovor.png?v=1636058269',
+          '//cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_bath_body_hovor.png?v=1633984408',
+          '//cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_Frag_hovor.png?v=1636058424'
+         ]
+
+            
+              var card = document.getElementById('card'+el)
+              card.src = hoverImageUri[el-1]
+            
+        }
+
+          function nomalCardImage(el){
+            var imageUri = [
+           '//cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_SkincareUnder40_1.png?v=1634240309',
+           '//cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_MUunder20.png?v=1636058261',
+           '//cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_bath_body.png?v=1633984400',
+           '//cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_Frag_14fb016c-2ad7-46e6-a5e4-1a191cc074f2.png?v=1636058419'
+         ]
+         console.log(imageUri[el-1]); 
+
+            var card = document.getElementById('card'+el)
+              card.src = imageUri[el-1]
+          }
+
+    </script> 
   </body>
 </html>
+ 

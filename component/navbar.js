@@ -1,9 +1,7 @@
 function navbar(){
-    return `  <nav id="nav">
-    <div
-      class="d-flex justify-content-center align-items-center offer_alert"
-      id="offer_alert"
-    >
+    return `  <div class='' id="nav">
+<div class="d-flex justify-content-center align-items-center offer_alert"
+      id="offer_alert">
       <p class="mt-3" id="offer_text">
         FREE SHIPPING on all orders! 3 Days Only. Ends 12/13.
       </p>
@@ -12,8 +10,7 @@ function navbar(){
       <div class="nav_left">
         <ul>
           <li>
-            <a href=""
-              ><p class="hover-underline-animation ">Store & Services</p></a
+            <a href=""><p class="hover-underline-animation ">Store & Services</p></a
             >
           </li>
           <li>
@@ -36,10 +33,6 @@ function navbar(){
           <i class="far fa-shopping-bag"></i>
         </div>
       </div>
-    </div>
-    <div class="navbarBottom text-center">
-      <b class="bottomText">FREE EXPEDITED SHIPPING on orders $150+! </b
-      ><span>One Day Only! &#5167;</span>
     </div>
     <hr />
     <div class="middleNavbar" id="middleNavbar">
@@ -108,7 +101,11 @@ function navbar(){
     </div>
     </div>
 
-  </nav>`
+  </div>
+  <div class="navbarBottom text-center ">
+  <b class="bottomText">FREE EXPEDITED SHIPPING on orders $150+! </b>
+  <span>One Day Only! &#5167;</span>
+</div>`
 }
 
 export default navbar()
